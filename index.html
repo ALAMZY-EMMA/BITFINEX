@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="bitfinex.css">
+    <title>BITFINEX</title>
+</head>
+<body>
+    <header>
+        <!-- <a href="">skjn</a> -->
+        <div class="main">
+            <div class="logo2"><img src="images/bitfinex-logo.svg" class="bitfinexlogo" alt=""></div>
+            <div class="icons">
+                <i class="fa-solid fa-bars" id="open" onclick="openmenu()"></i>
+                <i class="fa-solid fa-x" id="close" onclick="closemenu()"></i>
+            </div>
+        </div>
+        <div class="menus" id="mainmenu">
+            <div class="logo"><img src="images/bitfinex-logo.svg" class="bitfinexlogo" alt=""></div>
+            <ol class="menus1">
+                <li class="text">Traders <i class="fa-solid fa-angle-down"></i></li>
+                <div class="traders">
+                    <li class="trade1">Features</li>
+                    <li class="trade">Mobile App</li>
+                    <li class="trade">P2P Trading</li>
+                    <li class="trade">Market Statistics</li>
+                    <li class="trade">Bitfinex Terminal</li>
+                    <li class="trade">Corporate & Professional</li>
+                    <li class="trade">Our Fees</li>
+                    <li class="trade">Security</li>
+                    <li class="trade">API Documentation</li>
+                    <li class="trade">Bitfinex Leaderboard</li>
+                    <li class="trade">Deposits & Withdrawals</li>
+                    <li class="trade">Payment Cards</li>
+                    <li class="trade">Reporting Tool</li>
+                </div>
+            </ol>
+            <li class="menus2">Lenders<i class="fa-solid fa-angle-down"></i>
+                <div class="lenders">
+                    <ul class="lend1">Staking</ul>
+                    <ul class="lend">Lending Pro</ul>
+                    <ul class="lend">Bitfinex Borrow</ul>
+                </div>
+            </li>
+            <li class="menus3">About<i class="fa-solid fa-angle-down"></i>
+                <div class="about">
+                    <ul class="abouttext1">About Bitfinex</ul>
+                    <ul class="abouttext">Blog</ul>
+                    <ul class="abouttext">Press</ul>
+                    <ul class="abouttext">Newsletter</ul>
+                    <ul class="abouttext">Status Page</ul>
+                    <ul class="abouttext">Utilities</ul>
+                </div>
+            </li>
+            <li class="menus4">UNUS Sed Leo </li>
+            <li class="menus5">Securities </li>
+            <li class="menus6">Affiliates </li>
+
+           
+            <div class="log3">
+                <!-- <li class="language">English <i class="fa-solid fa-angle-down"></i></li> -->
+                <div class="language">
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">French</option>
+                        <option value="">Korean</option>
+                        <option value="">Spanish</option>
+                        <option value="">Espanol</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+               <div class="acc">
+                <a href="loginpage.html" target="_blank"><button class="login">Log In</button></a>
+                <a href="signup.html"><button class="signup">Sign Up</button></a>
+               </div>
+            </div>
+        
+        </div>
+        <div class="log">
+            <a href="loginpage.html" target="_blank"><li class="login">Log In</li></a>
+            <a href="signup.html"   target="_blank"><li class="signup">Sign Up</li></a>
+            <!-- <li class="language">English <i class="fa-solid fa-angle-down"></i> -->
+                <div class="language">
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">French</option>
+                        <option value="">Korean</option>
+                        <option value="">Spanish</option>
+                        <option value="">Espanol</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+            <!-- </li> -->
+        </div>
+    </header>
+
+    <div class="tips">
+        <i class="fa-solid"></i>
+        <div class="lendingpro">
+            <span class="pro">Lending Pro</span>
+            <span class="save">Save Time And Automate Your Lending Strategies With Lending Pro!</span>
+            <a href=""><button class="learn">LEARN MORE</button></a>
+        </div>
+        <i class="fa-solid fa-close"></i>
+    </div>
+    <!-- <div class="tips">
+        <i class="fa-solid"></i>
+        <div class="lendingpro">
+            <span class="pro">Lending Pro</span>
+            <span class="save">Save Time And Automate Your Lending Strategies With Lending Pro!</span>
+            <button class="learn">LEARN MORE</button>
+        </div>
+        <i class="fa-solid fa-close"></i>
+    </div>
+    <div class="tips">
+        <i class="fa-solid"></i>
+        <div class="lendingpro">
+            <span class="pro">Lending Pro</span>
+            <span class="save">Save Time And Automate Your Lending Strategies With Lending Pro!</span>
+            <button class="learn">LEARN MORE</button>
+        </div>
+        <i class="fa-solid fa-close"></i>
+    </div> -->
+
+    <marquee behavior="scroll" direction="lrt" id="marq">
+        <div class="news">
+            <span class="pluse"><i class="fa-solid fa-wifi"></i>Bitfinex Pluse</span>
+            <div class="news2">
+                <span class="subnews">@News</span>
+                <span class="subnews2">SEC Continues to Postpone Bitcoin ETF Decisions: Another Postponement News Revealed</span>
+            </div>
+            <div class="news2">
+                <span class="subnews">@News</span>
+                <span class="subnews2">Top Crypto Gainers Today on DEXTools-XV,PEPED,PIDOGE</span>
+            </div>
+          
+            <div class="news2">
+                <span class="subnews">@News</span>
+                <span class="subnews2">Top Crypto Gainers Today on DEXTools-XV,PEPED,PIDOGE</span>
+            </div>
+          
+        </div>
+
+    </marquee>
+
+    <div class="delivering-text">
+        <div class="deliver-texts">
+            <h4 class="deliver-text"> Delivering Financial <br>Freedom</h4>
+            <p class="choice">Your assets. Your choices. Our technology.</p>
+            <div class="btns">
+                <a href="signup.html"><button class="btn1">Sign Up</button></a>
+                <button class="btn2">View Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="coins-widget">
+        <!-- widget is here -->
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+    {
+    "width": "100%",
+    "height": "100%",
+    "currencies": [
+      "EUR",
+      "USD",
+      "JPY",
+      "GBP",
+      "CHF",
+      "AUD",
+      "CAD",
+      "NZD"
+    ],
+    "isTransparent": true,
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    </div>
+
+    <div class="time">
+        <div class="hours">
+            <h4 class="past">Past 24 Hours</h4>
+            <p class="amount">$262m</p>
+        </div>
+        <div class="days">
+            <h4 class="past">Past 7 Days</h4>
+            <p class="amount">$3,331m</p>
+        </div>
+        <div class="days2">
+            <h4 class="past">Past 30 Days</h4>
+            <p class="amount">$15,434m</p>
+        </div>
+    </div>
+
+    <div class="features">
+        <h4 class="features-text">Features</h4>
+        <p class="features-text2">World class trading <br>platform </p>
+    </div>
+    
+    <div class="trading-platforms">
+        <div class="trading-platforms1">
+            <div class="trading-platform1">
+                <img src="images/icon-exchange.png" class="icon" alt="">
+                <span class="tradingplatform-text">
+                    <h3 class="platform-text">Exchange</h3>
+                    <p class="platform-text2">Bitfinex offers orders books
+                         <br> with top tier liquidity, allowing 
+                         <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                         Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                        </p>
+                </span>
+           </div>
+           <div class="trading-platform1">
+                 <img src="images/icon-margin_funding.png" class="icon" alt="">
+                <span class="tradingplatform-text">
+                    <h3 class="platform-text">Margin funding</h3>
+                    <p class="platform-text2">Bitfinex offers orders books
+                        <br> with top tier liquidity, allowing 
+                        <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                        Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                    </p>
+                </span>
+            </div>
+           <div class="trading-platform1">
+                 <img src="images/icon-margin_trading.png" class="icon" alt="">
+                <span class="tradingplatform-text">
+                    <h3 class="platform-text">Margin trading</h3>
+                    <p class="platform-text2">Bitfinex offers orders books
+                        <br> with top tier liquidity, allowing 
+                        <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                        Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                    </p>
+                </span>
+            </div>
+           
+        </div>
+        <div class="trading-platforms2">
+            <div class="trading-platform1">
+                <img src="images/icon-order_type.png" class="icon" alt="">
+               <span class="tradingplatform-text">
+                   <h3 class="platform-text">Order types</h3>
+                   <p class="platform-text2">Bitfinex offers orders books
+                       <br> with top tier liquidity, allowing 
+                       <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                       Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                   </p>
+               </span>
+           </div>
+            <div class="trading-platform1">
+                <img src="images/icon-customizable_interface.png" class="icon" alt="">
+               <span class="tradingplatform-text">
+                   <h3 class="platform-text">customizable <br>interface</h3>
+                   <p class="platform-text2">Bitfinex offers orders books
+                       <br> with top tier liquidity, allowing 
+                       <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                       Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                   </p>
+               </span>
+           </div>
+            <div class="trading-platform1">
+                <img src="images/icon-security.png" class="icon" alt="">
+               <span class="tradingplatform-text">
+                   <h3 class="platform-text">Security</h3>
+                   <p class="platform-text2">Bitfinex offers orders books
+                       <br> with top tier liquidity, allowing 
+                       <br>users to easily exchange Bitcoin, Ethereum, EOS,<br>
+                       Litecoin, Ripple, NEO and <br>many other digital assets with <br>minimal slippage.
+                   </p>
+               </span>
+           </div>
+        </div>
+        <div class="readmore">
+            <i class="fa-solid fa-angle-up"></i>
+            <h4 class="readmore-text">Read more about our features</h4>
+        </div>
+    
+    </div>
+    <div class="advance-features">
+        <h5 class="advancefeatures-text">ADVANCE FEATURES FOR PROFESSIONALS</h5>
+        <h3 class="advancefeatures-text2">To meet the highest of demands</h3>
+    </div>
+
+    <div class="demands">
+        <div class="prof-connecttexts">
+            <div class="prof-connect">
+                <h2 class="profconnect-text">Professional connectivity</h2>
+                <p class="profconnect-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consectetur exercitationem dolor nesciunt at magnam dolorem? <br> Consectetur, aspernatur et aperiam iusto dicta libero? <br> Autem minima minus ipsa, sunt et quisquam culpa.</p>
+                <div class="readmore2">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <h4 class="readmore-text">Read more about our features</h4>
+                </div>
+            </div>
+            <div class="prof-connect">
+                <h2 class="profconnect-text">Advance chart tools</h2>
+                <p class="profconnect-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consectetur exercitationem dolor nesciunt at magnam dolorem? <br> Consectetur, aspernatur et aperiam iusto dicta libero? <br> Autem minima minus ipsa, sunt et quisquam culpa.</p>
+                <div class="readmore2">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <h4 class="readmore-text">View our demo</h4>
+                </div>
+            </div>
+        </div>
+        <div class="prof-connecttexts2">
+            <div class="prof-connect">
+                <h2 class="profconnect-text">Corporate account and professional trading</h2>
+                <p class="profconnect-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consectetur exercitationem dolor nesciunt at magnam dolorem? <br> Consectetur, aspernatur et aperiam iusto dicta libero? <br> Autem minima minus ipsa, sunt et quisquam culpa.</p>
+                <div class="readmore2">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <h4 class="readmore-text">Read more about our features</h4>
+                </div>
+            </div>
+            <div class="prof-connect">
+                <h2 class="profconnect-text">API</h2>
+                <p class="profconnect-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consectetur exercitationem dolor nesciunt at magnam dolorem? <br> Consectetur, aspernatur et aperiam iusto dicta libero? <br> Autem minima minus ipsa, sunt et quisquam culpa.</p>
+                <div class="readmore2">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <h4 class="readmore-text">View our API</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="latest-news">
+        <h4 class="latestnews-text">LATEST NEWS</h4>
+        <div class="issuesimages">
+           <div class="alpha">
+                <img src="images/BFX_Alpha_Issue-2-539x303.png" class="issues" alt="">
+                <div class="issue-text1">
+                    <h6 class=" issue-subtext">MON NOV 27 2023 BITFINEX ALPHA</h6>
+                    <P class="issue-subtext2">Bitfinex Alpha | Bitcoin Supply <br> Unmoved as De</P>
+                </div>
+           </div>
+           <div class="alpha">
+                <img src="images/BFX_Alpha_Issue-2-539x303.png" class="issues" alt="">
+                <div class="issue-text1">
+                    <h6 class=" issue-subtext">MON NOV 27 2023 BITFINEX ALPHA</h6>
+                    <P class="issue-subtext2">Bitfinex Alpha | Bitcoin Supply <br> Unmoved as De</P>
+                </div>
+           </div>
+           <div class="alpha">
+                <img src="images/BFX_Alpha_Issue-2-539x303.png" class="issues" alt="">
+                <div class="issue-text1">
+                    <h6 class=" issue-subtext">MON NOV 27 2023 BITFINEX ALPHA</h6>
+                    <P class="issue-subtext2">Bitfinex Alpha | Bitcoin Supply <br> Unmoved as De</P>
+                </div>
+           </div>
+        </div>
+        <p class="blog">Read more news on our blog <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+
+    <div class="token">
+        <div class="token-image">
+            <img src="images/leo.png" class="token-img" alt="">
+        </div>
+        <div class="token-text">
+            <h5 class="unus">UNUS SED LEO</h5>
+            <h2 class="token-text2">
+                A token designed to <br>empower the <br> Bitfinex community
+            </h2>
+            <p class="token-text3">
+                UNUS SED LEO provides utility for those seeking to <br>
+                maximize the output and capabilities of the Bitfinex <br>
+                trading plaform.
+            </p>
+            <div class="token-text4">
+                <i class="fa-solid fa-angle-up"></i>
+                Access the LEO dashboard here
+            </div>
+        </div>
+        <div class="token-image2">
+            <img src="images/leo.png" class="token-img" alt="">
+            <div class="token-text5">
+                <i class="fa-solid fa-angle-up"></i>
+                Access the LEO dashboard here
+            </div>
+        </div>
+    </div>
+
+    <div class="app">
+        <div class="app-text">
+            <h5 class="our-app">OUR APP</h5>
+            <h2 class="our-app2">Trusted platform <br>anytime & <br>anywhere</h2>
+            <p class="our-app3">The Bitfinex mobile app adapts the full functionality of <br>the Bitfinex platform form seamless 'on-the-go' trading.</p>
+            <div class="app-text3">
+                <i class="fa-solid fa-angle-up"></i>
+                Learn more about our app
+            </div>
+            <div class="app-download">
+                <img src="images/app-store-dowload.svg" class="store" alt="">
+                <img src="images/google-play-button.svg" class="store" alt="">
+                <img src="images/download-qr.svg" class="scan" alt="">
+            </div>
+        </div>
+        <div class="phone">
+            <img src="images/mobile.png" class="phone-img" alt="">
+        </div>
+    </div>
+    <div class="start">
+        <h3 class="start-text">Start trading today</h3>
+        <div class="account">
+            <button type="button" class="click"><b>Sign Up</b></button>
+            <a href="loginpage.html" target="_blank"><button type="button" class="click2"><b>Log In</b></button></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-img">
+            <img src="images/bitfinex-logo.svg" alt="">
+        </div>
+        <div class="language2">
+            <select name="" id="lang">
+                <option value="">English</option>
+                <option value="">French</option>
+                <option value="">Korean</option>
+                <option value="">Spanish</option>
+                <option value="">Espanol</option>
+                <option value="">Chinese</option>
+            </select>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="services">
+            <h4 class="services-text">Services</h4>
+            <p class="services-text2">Exchange</p>
+            <p class="services-text2">Margin Trading</p>
+            <p class="services-text2">Derivatives</p>
+            <p class="services-text2">P2P Trading</p>
+            <p class="services-text2">OTC</p>
+            <p class="services-text2">Lending</p>
+            <p class="services-text2">Securities Traing</p>
+            <p class="services-text2">Staking</p>
+            <p class="services-text2">API & WebSockets</p>
+            <p class="services-text2">Corporate & Professional</p>
+            <p class="services-text2">Security & Protection</p>
+            <p class="services-text2">Deposits & Withdrawals</p>
+            <p class="services-text2">Credit/Debit Cards</p>
+        </div>
+        <div class="services">
+            <h4 class="services-text3">Products</h4>
+            <p class="services-text2">Exchange</p>
+            <p class="services-text2">Mobile App</p>
+            <p class="services-text2">Lending Pro</p>
+            <p class="services-text2">Bitfinex Borrow</p>
+            <p class="services-text2">Bitfinex Pay</p>
+            <p class="services-text2">Bitfinex Terminal</p>
+            <p class="services-text2">Reporting APP</p>
+            <p class="services-text2">Bitfinex Honey</p>
+            <p class="services-text2">UNUS SED LEO</p>
+        </div>
+        <div class="services2">
+            <h4 class="services-text">Company</h4>
+            <p class="services-text2">About</p>
+            <p class="services-text2">Manifesto</p>
+            <p class="services-text2">Affiliates</p>
+            <p class="services-text2">Careers</p>
+            <p class="services-text2">Announcements</p>
+            <p class="services-text2">Bitfinex Alpha</p>
+            <p class="services-text2">Blog</p>
+            <p class="services-text2">Press</p>
+            <p class="services-text2">Newsletter</p>
+            <p class="services-text2">Utilities</p>
+            <p class="services-text2">Market Statistics</p>
+            <p class="services-text2">Our Fees</p>
+            <p class="services-text2">SOC2</p>
+        </div>
+        <div class="services">
+            <h4 class="services-text4">Support</h4>
+            <p class="services-text2">Help Center</p>
+            <p class="services-text2">Contact Us</p>
+            <p class="services-text2">Bitfinex Channels</p>
+            <p class="services-text2">Bug Bounty</p>
+
+            <h4 class="services-text5">Learn</h4>
+            <p class="services-text2">Paper Trading</p>
+            <p class="services-text2">How to Buy Bitcoin</p>
+            <p class="services-text2">How to Buy Ethereum</p>
+            <p class="services-text2">How to Buy Litecoin</p>
+        </div>
+        <div class="services">
+            <h4 class="services-text3">Legal & privacy</h4>
+            <p class="services-text2">Privacy</p>
+            <p class="services-text2">Cookies Policy</p>
+            <p class="services-text2">Cookies Preferences</p>
+            <p class="services-text2">Exchange Terms</p>
+            <p class="services-text2">Derivatives Terms</p>
+            <p class="services-text2">General Notices & Terms</p>
+            <p class="services-text2">Bitfinex Pay Terms</p>
+            <p class="services-text2">Token Specific Terms</p>
+            <p class="services-text2">Trading Rulebook</p>
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="copyright">
+            <h5 class="copyright-text">Copyright © 2023 Alamzy Inc. All rights reserved.</h5>
+        </div>
+        <div class="social">
+            <i class="fa-solid fa-trophy"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-reddit"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </div>
+    <div class="cookies">
+        <div class="cookies-box">
+            <h4 class="cookies-text">Cookies</h4>
+            <p class="cookies-text2">We use cookies to enhance your <br> experience and personal content.</p>
+            <p class="cookies-text3">Cookies Policy</p>
+            <div class="cookies-btns">
+                <button class="accept">Manage</button>
+                <button class="accept2">Accept All</button>
+            </div>
+        </div>
+        <div class="chat">
+            <i class="fa-brands fa-whatsapp">chat</i>
+        </div>
+    </div>
+
+
+
+    <script src="bitfinex.js"></script>
+</body>
+</html>

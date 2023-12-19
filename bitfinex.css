@@ -1,0 +1,911 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 46, 46);
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:  rgb(3, 46, 46);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-top: -80px;
+    z-index: 1;
+}
+.main{
+    display: none;
+}
+.menus{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.bitfinexlogo{
+    width: 150px;
+}
+.menus, .menus2, .menus3, .menus4, .menus5, .menus6{
+    cursor: pointer;
+}
+.menus1:hover{
+    .traders{
+        display: block;
+    }
+}
+.menus1:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+}
+.traders{
+    position: absolute;
+    width: 180px;
+    height: 390px;
+    padding: 6px;
+    top: 45px;
+    background-color:rgb(1, 105, 105);
+    color: white;
+    left: 150px;
+    display: none;
+}
+.trade1{
+    cursor: pointer;
+}
+.trade1:hover{
+    color: rgb(2, 202, 2);
+}
+.trade{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.trade:hover{
+    color: rgb(2, 202, 2);
+}
+      
+.menus2:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+    
+}
+.menus2:hover{
+    .lenders{
+        display: block;
+    }
+}
+.lenders{
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    padding: 6px;
+    top: 45px;
+    background-color:rgb(1, 105, 105);;
+    color: white;
+    left: 250px;
+    display: none;
+}
+.lend1{
+    cursor: pointer;
+}
+.lend1:hover{
+    color: rgb(2, 202, 2);
+}
+.lend{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.lend:hover{
+    color: rgb(2, 202, 2);
+}
+.menus3:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+    
+}
+.menus3:hover{
+    .about{
+        display: block;
+    }
+}
+.about{
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    padding: 6px;
+    top: 45px;
+    background-color:rgb(1, 105, 105);
+    color: white;
+    left: 300px;
+    display: none;
+    font-size: 15px;
+}
+.abouttext1{
+    cursor: pointer;
+}
+.abouttext1:hover{
+    color: rgb(2, 202, 2);
+}
+.abouttext{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.abouttext:hover{
+    color: rgb(2, 202, 2);
+}
+
+.menus4:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+    
+}
+.menus5:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+    
+}
+.menus6:hover{
+    color: rgb(2, 202, 2);
+    transition-duration: 1s;
+    
+}
+.fa-angle-down{
+    font-size: 11px;
+}
+
+a{
+    color: white;
+}
+
+.log{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.login{
+    cursor: pointer;
+}
+
+.signup{
+    color: rgb(2, 202, 2);
+    cursor: pointer;
+}
+.language{
+    cursor: pointer;
+}
+select{
+    cursor: pointer;
+    background-color: rgb(3, 39, 39);
+    color: white;
+    border: none;
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+option{
+    cursor: pointer;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.fa-x{
+    display: none;
+}
+.log3{
+    display: none;
+}
+.tips{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(3, 78, 78);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.lendingpro{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.learn{
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: rgb(13, 245, 13) ;
+    color: white;
+    cursor: pointer;
+}
+.fa-close{
+    color: white;
+    cursor: pointer;
+}
+.news{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+marquee{
+    margin-top: 10px;
+    background-color: rgb(4, 92, 92);
+}
+.pluse{
+    border-right: 2px solid white;
+    padding: 5px;
+    color: white;
+}
+.subnews{
+    color: skyblue;
+}
+.subnews2{
+    border-right: 2px solid white;
+    padding: 5px;
+    color: white;
+}
+.delivering-text{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(3, 46, 46);
+    color: white;
+    margin-top: 20px;
+    /* padding: 10px; */
+}
+.deliver-text{
+    font-weight: lighter;
+    font-size: 50px;
+    color: white;
+}
+.choice{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.btns{
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(4, 207, 207);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgb(4, 92, 92);
+    color: white;
+}
+.coins-widget{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+.time{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: bisque; */
+}
+.hours{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(20, 80, 80);
+    border-radius: 5px;
+}
+.past{
+    margin-top: 30px;
+    color: white;
+}
+.amount{
+    color: rgb(2, 202, 2);
+    font-size: 30px;
+}
+.days{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color:  rgb(20, 80, 80);
+    border-radius: 5px;
+}
+.days2{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color:  rgb(20, 80, 80);
+    border-radius: 5px;
+}
+.features{
+    width: 100%;
+    height: 220px;
+    margin-top: 50px;
+    background-color: rgb(11, 59, 59);
+    padding: 100px;
+    color: rgb(2, 202, 2);
+}
+.features-text2{
+    font-size: 40px;
+}
+.trading-platforms{
+    width: 100%;
+    padding: 70px;
+    background-color: rgb(11, 59, 59);
+    color: white;
+}
+.icon{
+    width: 80px;
+    margin-top: -60px;
+}
+.trading-platforms1{
+    display: flex;
+    gap: 10px;
+}
+.trading-platform1{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+.trading-platforms2{
+    display: flex;
+    gap: 10px;
+    margin-top: 70px;
+}
+.readmore{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    color: rgb(2, 202, 2);
+}
+.advance-features{
+    height: 200px;
+    padding: 70px;
+    /* background-color: aqua; */
+    color: rgb(2, 202, 2);
+}
+.advancefeatures-text2{
+    font-size: 40px;
+    font-weight: 400;
+}
+.demands{
+    color: white;
+    padding: 70px;
+}
+.prof-connecttexts{
+    display: flex;
+    justify-content: space-between;
+}
+.readmore2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(2, 202, 2);
+}
+.prof-connecttexts2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.latest-news{
+    background-color:rgb(11, 59, 59);
+    color: white;
+    padding: 70px;
+}
+.issuesimages{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.issues{
+    width: 400px;
+    border-radius: 6px;
+}
+.issue-text1{
+    width: 400px;
+    padding: 20px;
+    margin-top: -6px;
+    background-color: rgb(3, 46, 46);
+    color: white;
+    border-radius: 6px;
+}
+.issue-subtext{
+    color: silver;
+}
+.issue-subtext2{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.blog{
+    margin-top: 20px;
+    color:  rgb(2, 202, 2);
+}
+.token{
+    color:  rgb(2, 202, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.token-img{
+    width: 500px;
+    margin-top: 50px;
+}
+.token-image2{
+    display: none;
+}
+.token-text2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.token-text3{
+    color: white;
+    margin-top: 20px;
+}
+.token-text4{
+    margin-top: 20px;
+}
+.token-text5{
+    margin-top: 20px;
+}
+.app{
+    background-color:rgb(11, 59, 59);
+    color: white;
+    padding: 70px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.our-app{
+    color:rgb(2, 202, 2);
+}
+.our-app2{
+    font-size: 50px;
+    font-weight: 400;
+    color:rgb(2, 202, 2);
+}
+.our-app3{
+    margin-top: 20px;
+}
+.app-text3{
+    margin-top: 20px;
+    color:rgb(2, 202, 2);
+    cursor: pointer;
+}
+.app-download{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+.store{
+    cursor: pointer;
+}
+.scan{
+    width: 45px;
+    cursor: pointer;
+}
+.phone-img{
+    width: 500px;
+    
+}
+.start{
+    /* background-color: aqua; */
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.start-text{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+.account{
+    display: flex;
+    gap: 10px;
+    
+}
+.click{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(2, 202, 2);
+    color: white;
+    cursor: pointer;
+}
+.click2{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color:rgb(11, 59, 59);
+    color: white;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(5, 75, 75);
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+#lang{
+    cursor: pointer;
+    background-color: rgb(3, 39, 39);
+    color: white;
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.footer2{
+    background-color:rgb(11, 88, 88);;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    color: white;
+    gap: 130px;
+}
+.services-text2{
+    font-size: 15px;
+    color: silver;
+    margin-top: 10px;
+}
+.services-text3{
+    margin-top: -120px;
+}
+.services-text4{
+    margin-top: -90px;
+}
+.services-text5{
+    margin-top: 40px;
+}
+.footer3{
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 40px;
+    justify-content: space-between;
+}
+.social{
+    display: flex;
+    gap: 15px;
+}
+.fa-trophy{
+    background-color:rgb(5, 75, 75);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fa-brands{
+    background-color:rgb(5, 75, 75);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cookies{
+    background-color: rgb(11, 88, 88);
+    height: 500px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+.cookies-box{
+    background-color: rgb(3, 46, 46);
+    width: 280px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 300px;
+    padding: 10px;
+}
+.cookies-text{
+    color: white;
+}
+.cookies-text2{
+    color: silver;
+}
+.cookies-text3{
+    color: blue;
+    cursor: pointer;
+}
+.cookies-btns{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 20px;
+}
+.accept{
+    background-color: rgb(3, 46, 46);
+    width: 90px;
+    height: 25px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.accept2{
+    background-color:  rgb(2, 202, 2);
+    width: 90px;
+    height: 25px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.fa-whatsapp{
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 350px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    background-color: rgb(2, 202, 2);
+    color: white;
+    animation: anime 2s infinite;
+}
+@keyframes anime{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+
+
+
+
+@media only screen and (width < 800px){
+
+    .main{
+        display: flex;
+        gap: 150px;
+        align-items: center;
+        
+    }
+    .logo{
+        display: none;
+    }
+    .menus{
+        background-color: rgb(9, 65, 65);
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        top: 0px;
+        display: flex;
+        align-items: start;
+        padding: 20px;
+        height: 100vh;
+        margin-top: 60px;
+        display: none;
+        width: 100%;
+        position: absolute;
+    }
+    .menus2, .menus3, .menus4, .menus5, .menus6, .log3{
+        margin-top: 50px;
+    }
+    .traders{
+        left: 20px;
+        top: 40px;
+        background-color: rgb(9, 65, 65);
+    }
+    .lenders{
+        left: 20px;
+        top: 120px;
+        background-color: rgb(9, 65, 65);
+    }
+    .about{
+        left: 20px;
+        top: 170px;
+        background-color: rgb(9, 65, 65);
+    }
+    .log{
+        display: none;
+    }
+    .log3{
+        display: block;
+    }
+   
+    .acc{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .login{
+        width: 100px;
+        height: 30px;
+        border: 2px solid white;
+        background-color: rgb(1, 105, 105);
+        color: white;
+    }
+    .signup{
+        width: 100px;
+        height: 30px;
+        background-color:rgb(2, 202, 2) ;
+        color: white;
+        border: none;
+    }
+    .tips{
+        height:150px;
+        text-align: center;
+    }
+
+    .lendingpro{
+        flex-direction: column;
+    }
+    .fa-close{
+        font-size: 20px;
+    }
+    .delivering-text{
+        flex-direction: column;
+        text-align: start;
+        margin-top: 60px;
+   }
+   .choice{
+        margin-top: 20px;
+   }
+   .btns{
+        flex-direction: column;
+   }
+   .btn1, .btn2{
+        width: 400px;
+   }
+   .time{
+    flex-direction: column;
+   }
+   .days, .days2{
+    margin-top: 10px;
+   }
+   .features{
+    padding: 50px;
+   }
+   .features-text2{
+    font-size: 25px;
+   }
+   .trading-platforms1{
+    flex-direction: column;
+   }
+   .trading-platforms2{
+    flex-direction: column;
+   }
+   .platform-text{
+    margin-top: 40px;
+   }
+   .prof-connecttexts, .prof-connecttexts2{
+    flex-direction: column;
+   }
+   .profconnect-text{
+    margin-top: 30px;
+   }
+   .issuesimages{
+    flex-direction: column;
+   }
+   .issues, .issue-text1{
+    width: 250px;
+   }
+   .issue-subtext2{
+    font-size: 15px;
+   }
+   .token{
+    flex-direction: column;
+   }
+   .token-img{
+    width: 400px;
+   }
+   .token-text2{
+    font-size: 30px;
+   }
+   .token-image{
+    display: none;
+   }
+   .token-image2{
+    display: block;
+   }
+   .token-text4{
+    display: none;
+   }
+   .token-text5{
+    display: block;
+   }
+   .app{
+    flex-direction: column;
+   }
+   .our-app2{
+    font-size: 30px;
+   }
+   .phone-img{
+    width: 200px;
+   }
+   .app-download{
+    flex-direction: column;
+   }
+   .store{
+    width: 200px;
+   }
+   .scan{
+    display: none;
+   }
+   .start{
+    flex-direction: column;
+   }
+   .start-text{
+    font-size: 20px;
+   }
+   .account{
+    flex-direction: column;
+   }
+   .click, .click2{
+    width: 300px;
+   }
+   .footer{
+    align-items: start;
+    flex-direction: column;
+    height: 200px;
+   }
+   .language2{
+    margin-top: 30px;
+   }
+   #lang{
+    width: 300px;
+   }
+   .footer2{
+    flex-direction: column;
+    /* margin-top: 30px; */
+    align-items: start;
+   }
+   .services2{
+    margin-top: -80px;
+   }
+   .footer3{
+    flex-direction: column;
+   }
+   .social{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: start;
+   }
+   .cookies{
+    flex-direction: column;
+   }
+   .cookies-box{
+    margin-top: 0px;
+   }
+   .chat{
+    margin-top: -400px;
+   }
+}

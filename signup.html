@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(3, 46, 46);
+            color: silver;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .login{
+            width: 130px;
+            height: 30px;
+            cursor: pointer;
+            background-color: rgb(3, 46, 46);
+            color: white;
+            border: 1px solid white;
+        }
+        select{
+            cursor: pointer;
+            background-color: rgb(3, 39, 39);
+            color: white;
+            border: none;
+            width: 130px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        option{
+            cursor: pointer;
+        }
+        .signup-text{
+            color: white;
+        }
+        .account{
+            width: 100%;
+            height: 600px;
+            margin-top: 30px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .email{
+         margin-top: 10px;
+       }
+        .password{
+         margin-top: 10px;
+        }
+        input{
+            width: 420px;
+            padding: 8px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            background-color: rgb(2, 80, 80);
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .send{
+            width: 420px;
+            padding: 8px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: rgb(33, 165, 165);
+            color: white;
+        }
+        .my{
+            width: 420px;
+            background-color: rgb(4, 31, 31);
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            /* justify-content: center; */
+        }
+        #check{
+            width: 20px;
+        }
+        span{
+            color: rgb(2, 202, 2);
+        }
+        .site{
+            margin-top: 20px;
+            margin-left: -60px;
+        }
+        .cookies{
+            background-color: rgb(11, 88, 88);
+            height: 500px;
+            display: flex;
+            padding: 40px;
+            justify-content: space-between;
+            margin-top: -230px;
+        }
+        .cookies-box{
+            background-color: rgb(3, 46, 46);
+            width: 280px;
+            height: 150px;
+            border-radius: 5px;
+            margin-top: 300px;
+            padding: 10px;
+        }
+        .cookies-text{
+            color: white;
+        }
+        .cookies-text2{
+            color: silver;
+        }
+        .cookies-text3{
+            color: blue;
+            cursor: pointer;
+        }
+        .cookies-btns{
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .accept{
+            background-color: rgb(3, 46, 46);
+            width: 90px;
+            height: 25px;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .accept2{
+            background-color:  rgb(2, 202, 2);
+            width: 90px;
+            height: 25px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+        .fa-whatsapp{
+            width: 90px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 350px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            gap: 10px;
+            background-color: rgb(2, 202, 2);
+            color: white;
+            animation: anime 2s infinite;
+        }
+        @keyframes anime{
+            from{
+                transform: translateY(30px);
+            }
+            to{
+                transform: translateY(50px);
+            }
+        }
+
+        @media only screen and (width < 800px){
+            .top{
+                flex-direction: column;
+                border-bottom: 1px solid white;
+            }
+            .left{
+                margin-top: 10px;
+            }
+            .account{
+                width: 100%;
+               margin-left: 30px;
+            }
+            input{
+                width: 360px;
+            }
+            .my{
+                width: 360px;
+            }
+            .send{
+                width: 360px;
+            }
+            .site{
+                margin-left: 0px;
+                text-align: center;
+            }
+            .cookies{
+                display: none;
+            }
+        }
+    </style>
+    
+    <div class="top">
+        <div class="logo">
+            <img src="images/bitfinex-logo.svg" alt="">
+        </div>
+        <div class="left">
+            <a href="loginpage.html" target="_blank"><button class="login">Log In</button></a>
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">French</option>
+                <option value="">Korean</option>
+                <option value="">Spanish</option>
+                <option value="">Espanol</option>
+                <option value="">Chinese</option>
+            </select>
+        </div>
+    </div>
+    <div class="account">
+        <div class="details">
+            <h3 class="signup-text">Sign up</h3>
+            <div class="email">
+                <label for="">Email</label> <br>
+                <input type="email" name="" id="" placeholder="Email">
+           </div>
+            <div class="email">
+                <label for="">Username</label> <br>
+                <input type="text" name="" id="" placeholder="Username">
+           </div>
+            <div class="password">
+                <label for="">Password</label> <br>
+                <input type="password" name="" id="" placeholder="Create a password">
+            </div>
+            <div class="email">
+                <label for="">Country of residence</label> <br>
+                <input type="text" name="" id="" placeholder="select">
+           </div>
+            <div class="email">
+                <label for="">How did you hear about Bitfinex</label> <br>
+                <input type="text" name="" id="" placeholder="select">
+           </div>
+           <div class="email">
+              <label for="">Referral Code</label> <br>
+              <input type="text" name="" id="" placeholder="Can't be added later">
+            </div>
+           <div class="email">
+              <div class="my">
+                <input type="checkbox" name="" id="check">
+                 Please send me Bitfinex markerting emails.
+              </div>
+            </div> <br>
+            <p>By signing up i confirm I've created a strong and unique password <br>
+                not being used anywhere else i agree to the <span>terms & <br> conditions</span>
+                and <span>anti-spam policy.</span>
+            </p>
+           <a href=""> <button type="button" class="send">Sign Up</button> </a><br>
+            <p class="site">This site is protected by hCaptcha and its <span> Privacy Policy</span> and <span>Terms of Service</span> apply.</p>
+        </div>
+    </div>
+    <div class="cookies">
+        <div class="cookies-box">
+            <h4 class="cookies-text">Cookies</h4>
+            <p class="cookies-text2">We use cookies to enhance your <br> experience and personal content.</p>
+            <p class="cookies-text3">Cookies Policy</p>
+            <div class="cookies-btns">
+                <button class="accept">Manage</button>
+                <button class="accept2">Accept All</button>
+            </div>
+        </div>
+        <div class="chat">
+            <i class="fa-brands fa-whatsapp">chat</i>
+        </div>
+    </div>
+
+</body>
+</html>

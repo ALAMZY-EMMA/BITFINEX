@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <title>Login</title>
+</head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(9, 65, 65);
+            color:  rgb(196, 195, 195);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+        }
+        .signup{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .signup2{
+            background-color: rgb(33, 165, 165);
+            color: white;
+            width: 130px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        select{
+            background-color: rgb(3, 39, 39);
+            color: white;
+            width: 130px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 5px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            font-size: 30px;
+            color: white;
+        }
+        .url{
+            /* width: 320px; */
+            padding: 7px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: rgb(0, 90, 90);
+            color: white;
+        }
+        .email{
+            margin-top: 20px;
+        }
+        .password{
+            margin-top: 6px;
+        }
+        input{
+            width: 330px;
+            padding: 8px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            background-color: rgb(2, 80, 80);
+            color: white;
+        }
+        .send{
+            width: 330px;
+            padding: 8px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: rgb(33, 165, 165);
+            color: white;
+        }
+        .Forgetten{
+            margin-top: 10px;
+            cursor: pointer;
+            color: rgb(46, 238, 238);
+        }
+         .cookies{
+            background-color: rgb(11, 88, 88);
+            height: 500px;
+            display: flex;
+            padding: 40px;
+            margin-top: 150px;
+            justify-content: space-between;
+        }
+        .cookies-box{
+            background-color: rgb(3, 46, 46);
+            width: 280px;
+            height: 150px;
+            border-radius: 5px;
+            margin-top: 300px;
+            padding: 10px;
+        }
+        .cookies-text{
+            color: white;
+        }
+        .cookies-text2{
+            color: silver;
+        }
+        .cookies-text3{
+            color: blue;
+            cursor: pointer;
+        }
+        .cookies-btns{
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .accept{
+            background-color: rgb(3, 46, 46);
+            width: 90px;
+            height: 25px;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .accept2{
+            background-color:  rgb(2, 202, 2);
+            width: 90px;
+            height: 25px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+        .fa-whatsapp{
+            width: 90px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 350px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            gap: 10px;
+            background-color: rgb(2, 202, 2);
+            color: white;
+            animation: anime 2s infinite;
+        }
+        @keyframes anime{
+            from{
+                transform: translateY(30px);
+            }
+            to{
+                transform: translateY(50px);
+            }
+        }
+
+
+        @media only screen and (width < 800px){
+            header{
+                flex-direction: column;
+                margin-left: -10px;
+            }
+            .details{
+                margin-left: -10px;
+            }
+            .signup{
+                margin-top: 20px;
+            }
+            input, .send, .url{
+                width: 300px;
+            }
+            .cookies{
+                display: none;
+            }
+          
+        } 
+    </style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/bitfinex-logo.svg" alt="">
+        </div>
+        <div class="signup">
+            <a href="signup.html"><button class="signup2">Sign Up</button></a>
+            <!-- <li class="language">English <i class="fa-solid fa-angle-down"></i></li> -->
+            <div class="language">
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">French</option>
+                    <option value="">Korean</option>
+                    <option value="">Spanish</option>
+                    <option value="">Espanol</option>
+                    <option value="">Chinese</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="details">
+        <div class="details2">
+            <h2>Log In</h2>
+            <button type="button" class="url">Please check you are visiting https://www.bitfinex.com</button>
+           <div class="email">
+                <label for="">Email or Username</label> <br>
+                <input type="email" name="" id="" placeholder="Email address or Username">
+           </div> <br>
+            <div class="password">
+                <label for="">Password</label> <br>
+                <input type="password" name="" id="" placeholder="Password">
+            </div> <br>
+            <button type="button" class="send">Log In</button> <br>
+            <a href=""><p class="Forgetten">Forgetten password?</p></a>
+            <!-- <i class="fa-solid fa-eye"></i> -->
+        </div>
+    </div>
+    <div class="cookies">
+        <div class="cookies-box">
+            <h4 class="cookies-text">Cookies</h4>
+            <p class="cookies-text2">We use cookies to enhance your <br> experience and personal content.</p>
+            <p class="cookies-text3">Cookies Policy</p>
+            <div class="cookies-btns">
+                <button class="accept">Manage</button>
+                <button class="accept2">Accept All</button>
+            </div>
+        </div>
+        <div class="chat">
+            <i class="fa-brands fa-whatsapp">chat</i>
+        </div>
+    </div>
+</body>
+</html>
